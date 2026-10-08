@@ -35,6 +35,12 @@
                     {% endif %}
                 </form>
 
+                <form method="POST" action="{% url 'registrar_pago' numero.id %}">
+                    {% csrf_token %}
+                    <button type="submit" name="metodo_pago" value="efectivo" class="btn btn-success">Efectivo</button>
+                    <button type="submit" name="metodo_pago" value="transferencia" class="btn btn-primary">Transferencia</button>
+                </form>
+
                 <!-- Botones de Estado -->
                 <div class="d-flex justify-content-center gap-2">
                     <a href="{% url 'index_rifa' %}" class="btn btn-sm {% if not filtro_estado and not query_lista %}btn-dark{% else %}btn-outline-dark{% endif %}">
@@ -46,6 +52,7 @@
                 </div>
             </div>
         </div>
+                
 
         <!-- Listado de Listas y sus Números -->
         <div class="row">

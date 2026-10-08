@@ -14,7 +14,15 @@ class NumeroRifa(models.Model):
     celular_comprador = models.CharField(max_length=20, blank=True, null=True, verbose_name="Celular")
     pagado = models.BooleanField(default=False, verbose_name="¿Pagado?")
     fecha_pago = models.DateTimeField(blank=True, null=True, verbose_name="Fecha y Hora de Pago")
+    metodo_pago = models.CharField(max_length=20, choices=METODO_PAGO_CHOICES, blank=True, null=True)
 
     def __str__(self):
         estado = "Pagado 🟢" if self.pagado else "Pendiente ⚪"
         return f"Lista {self.lista.numero_lista} - N° {self.numero} | {self.nombre_comprador or 'Disponible'} ({estado})"   
+
+    METODO_PAGO_CHOICES = [
+    ('efectivo', 'Efectivo'),
+    ('transferencia', 'Transferencia'),
+]
+
+#

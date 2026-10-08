@@ -70,3 +70,13 @@ def pagar_lista_completa(request, lista_id):
       )
 
   return redirect('index_rifa')
+
+
+def registrar_pago(request, numero_id):
+    numero = get_object_or_404(NumeroRifa, id=numero_id)
+    if request.method == 'POST':
+        metodo = request.POST.get('metodo_pago')
+        numero.metodo_pago = metodo
+        numero.pagado = True
+        numero.save()
+    return redirect('nombre_de_tu_vista_principal')
