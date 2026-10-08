@@ -1,0 +1,15 @@
+# Python
+*.pyc
+__pycache__/
+
+# Base de datos local (para que cada entorno tenga la suya limpia)
+db.sqlite3
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
