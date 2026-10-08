@@ -79,4 +79,5 @@ def registrar_pago(request, numero_id):
         numero.metodo_pago = metodo
         numero.pagado = True
         numero.save()
-    return redirect('nombre_de_tu_vista_principal')
+    return redirect('registrar_pago')
+

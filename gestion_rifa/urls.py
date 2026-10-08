@@ -13,4 +13,11 @@ urlpatterns = [
         views.pagar_lista_completa,
         name='pagar_lista_completa',
     ),
+    path(
+        'registrar-pago/<int:pk>/',
+        views.registrar_pago,
+        name='registrar_pago',
+    ),
 ]
+    
+    
