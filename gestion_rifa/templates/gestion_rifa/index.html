@@ -35,7 +35,7 @@
                     {% endif %}
                 </form>
 
-                <form method="POST" action="{% url 'registrar_pago' numero.id %}">
+                <form method="POST" action="{% url 'registrar_pago' n.id %}">
                     {% csrf_token %}
                     <button type="submit" name="metodo_pago" value="efectivo" class="btn btn-success">Efectivo</button>
                     <button type="submit" name="metodo_pago" value="transferencia" class="btn btn-primary">Transferencia</button>
