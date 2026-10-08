@@ -35,12 +35,6 @@
                     {% endif %}
                 </form>
 
-                <form method="POST" action="{% url 'registrar_pago' n.id %}">
-                    {% csrf_token %}
-                    <button type="submit" name="metodo_pago" value="efectivo" class="btn btn-success">Efectivo</button>
-                    <button type="submit" name="metodo_pago" value="transferencia" class="btn btn-primary">Transferencia</button>
-                </form>
-
                 <!-- Botones de Estado -->
                 <div class="d-flex justify-content-center gap-2">
                     <a href="{% url 'index_rifa' %}" class="btn btn-sm {% if not filtro_estado and not query_lista %}btn-dark{% else %}btn-outline-dark{% endif %}">
@@ -122,6 +116,11 @@
                                                             <div class="text-muted" style="font-size: 0.75rem;">Pago: {{ item.fecha_pago|date:"d/m/Y H:i" }}</div>
                                                         {% endif %}
                                                         <button type="submit" class="btn btn-sm btn-outline-primary w-100 mt-1 py-0">Guardar Cambios</button>
+                                                    </form>
+                                                    <form method="POST" action="{% url 'registrar_pago' item.id %}" class="d-flex gap-1 mt-1">
+                                                        {% csrf_token %}
+                                                        <button type="submit" name="metodo_pago" value="efectivo" class="btn btn-sm btn-success w-50 py-0">Efectivo</button>
+                                                        <button type="submit" name="metodo_pago" value="transferencia" class="btn btn-sm btn-primary w-50 py-0">Transferencia</button>
                                                     </form>
                                                 </div>
                                             {% endfor %}

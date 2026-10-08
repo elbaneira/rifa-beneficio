@@ -14,7 +14,7 @@ urlpatterns = [
         name='pagar_lista_completa',
     ),
     path(
-        'registrar-pago/<int:pk>/',
+        'registrar-pago/<int:numero_id>/',
         views.registrar_pago,
         name='registrar_pago',
     ),
