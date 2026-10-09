@@ -6,7 +6,8 @@ Permite dejar el panel de administración tras bambalinas y ofrecer una interfaz
 
 ---
 
-![Demostración de la App Rifa-Beneficio](./img/gif_rifa.mp4)
+![Demostración de la App Rifa-Beneficio]
+<video src="./img/gif_rifa.mp4" controls width="100%"></video>
 
 ---
 
