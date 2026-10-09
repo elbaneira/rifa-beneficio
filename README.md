@@ -6,11 +6,6 @@ Permite dejar el panel de administración tras bambalinas y ofrecer una interfaz
 
 ---
 
-![Demostración de la App Rifa-Beneficio]
-<video src="./img/gif_rifa.mp4" controls width="100%"></video>
-
----
-
 ## 📺 Demostración en Video
 Haz clic en la siguiente imagen para ver el funcionamiento en vivo de la aplicación en YouTube:
 
