@@ -1,8 +1,15 @@
 # 🎟️ Sistema de Gestión para Rifa a Beneficio
 
-Aplicación web desarrollada en **Django** y **Bootstrap** diseñada para simplificar el control, registro y seguimiento de números y pagos en rifas benéficas o comunitarias. 
+Aplicación web desarrollada en **Python (Django)** y **Bootstrap** diseñada para simplificar el control, registro y seguimiento de números y pagos en rifas benéficas o comunitarias. 
 
 Permite dejar el panel de administración tras bambalinas y ofrecer una interfaz pública, rápida y amigable para registrar compradores tanto de forma individual como por listas completas.
+
+---
+
+## 📺 Demostración en Video
+Haz clic en la siguiente imagen para ver el funcionamiento en vivo de la aplicación en YouTube:
+
+[![Demostración de la App Rifa-Beneficio](https://img.youtube.com/vi/1PGKqk-b388/hqdefault.jpg)](https://youtu.be/1PGKqk-b388)
 
 ---
 
